@@ -16,6 +16,13 @@ d.read()
 
 The read function will listen to the serial port forever and **I believe this is implemented as a BLOCKING function**.  I have not tested this and I would like to look further at the ```serial.thread``` module.
 
+You can also pass a ```True``` value to the read function in order to write the data to a csv file.
+
+```
+# write to csv file
+d.read(store=True)
+```
+
 ## About the Dylos
 
 The Dylos returns air quality readings via serial in the form of small particles and large particles.  Small particles are all particles detected down to the detection limit of 0.5 microns.  Large particles are counts above the threshold of 2.5 microns.  In order to get the number of particles between 0.5 and 2.5 microns, subtract the large particle counts from the small particles counts.
@@ -30,7 +37,8 @@ Data is output every minute and the counts represent the average concentration o
 
 ```
 Air Quality Chart:
-3000+	= VERY POOR
+---
+3000+		= VERY POOR
 1050-3000	= POOR
 300-1050	= FAIR
 150-300 	= GOOD
