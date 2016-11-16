@@ -37,7 +37,7 @@ Data is output every minute and the counts represent the average concentration o
 
 ```
 Air Quality Chart:
----
+-----------------
 3000+		= VERY POOR
 1050-3000	= POOR
 300-1050	= FAIR
