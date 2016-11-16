@@ -18,7 +18,7 @@ The read function will listen to the serial port forever and **I believe this is
 
 You can also pass a ```True``` value to the read function in order to write the data to a csv file.
 
-```
+```python
 # write to csv file
 d.read(store=True)
 ```
