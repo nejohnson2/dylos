@@ -23,6 +23,7 @@
 import sys
 import time
 import serial
+import csv
 from datetime import datetime
 
 __author__ = "Nicholas E. Johnson <nejohnson2@gmail.com>"
